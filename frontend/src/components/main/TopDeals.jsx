@@ -20,15 +20,15 @@ const TopDeals=()=>{
     return(
         <>
               <section className="py-6">
-  <div className="container mx-auto px-6">
+  <div className="container md:mx-auto px-6">
     <p className="text-2xl font-bold underline decoration-red-600 decoration-4 underline-offset-8">
       Top Deals
     </p>
   </div>
 
-  <div className="container md:mx-auto my-6 mx-6">
+  <div className="container mx-auto my-6 sm:px-8 md:px-2">
     {/* Horizontal scroll container with custom scrollbar */}
-    <div className="flex flex-row overflow-x-auto space-x-4 py-6 scrollbar-thin scrollbar-thumb-slate-950 scrollbar-track-black">
+    <div className="flex flex-row overflow-x-auto space-x-4 py-6 mx-4 scrollbar-thin scrollbar-thumb-slate-950 scrollbar-track-black">
       {topdeals.map((item) => (
         <div key={item} className="bg-[#1C1816] w-60 rounded-xl shrink-0">
           <div className="text-center overflow-hidden space-x-2">
@@ -80,7 +80,7 @@ const TopDeals=()=>{
                         <div className="rounded-lg">
                             <img src="/images/scanorder.jpeg" alt="pick banner" className="rounded-xl" />
                         </div>
-                        <div className="bg-[#1C1816] text-center p-6 rounded-lg">
+                        <div className="bg-[#1C1816] text-center p-3 rounded-lg">
                             <div className="w-full">
                             <img src="/images/meal.png" alt="favorite" className="w-72 h-40 mx-auto" />
                             </div>
